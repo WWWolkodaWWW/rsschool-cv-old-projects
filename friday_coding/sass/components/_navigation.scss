@@ -1,0 +1,27 @@
+.navigation {
+	display: flex;
+}
+
+.navigation__link {
+	list-style: none;
+	padding: 0 10px;
+	
+}
+
+.navigation__link a {
+	cursor: pointer;
+	text-decoration: none;
+	color: $color-heading;
+	font-size: 1.5rem;
+	line-height: 2.8rem;
+	@extend %transition;
+	&:hover {
+		color: $color-primary;
+	}
+}
+
+.header__navigation {
+	@include media-tablet {
+		display: none;
+	}
+}
